@@ -48,7 +48,17 @@
             font-weight: 300 !important;
         }
         .sign-out {
+            font-size: var(--sm);
             color: var(--hospital-green) !important;
+        }
+        @media (max-width: 640px) {
+            .mobile-menu {
+                height: 100%;
+            }
+            .form {
+                height: 100%;
+                justify-content: space-between;
+            }
         }
     </style>
 </head>
@@ -87,15 +97,17 @@
             </li>
         </ul>
 
-        <ul>
-            <li>
-                <a href="/" class="email">platzi@example.com</a>
-            </li>
-            <li>
-                <a href="/" class="sign-out">Sign out</a>
-            </li>
-        </ul>
-
+        <div class="form">
+            <ul>
+                <li>
+                    <a href="/" class="email">platzi@example.com</a>
+                </li>
+                <li>
+                    <a href="/" class="sign-out">Sign out</a>
+                </li>
+            </ul>
+        </div>
+        
     </div>
 </body>
 </html>
